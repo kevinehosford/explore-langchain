@@ -26,7 +26,7 @@ vectordb = Chroma.from_documents(persist_directory=persist_dir, embedding=OpenAI
 
 vectordb.persist()
 
-query = "summarize"
+query = "How to summarize the average of a field"
 
 docs = vectordb.similarity_search(query, k=5)
 
