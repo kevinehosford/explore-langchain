@@ -7,4 +7,4 @@ query = "How to summarize the average of a field"
 
 docs = vectordb.similarity_search(query, k=5)
 
-print(docs[0].page_content[0:500])
+print(docs[1])

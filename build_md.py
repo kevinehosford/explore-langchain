@@ -7,7 +7,7 @@ from langchain.vectorstores import Chroma
 loader = DirectoryLoader('./md_docs', glob='**/*.mdx', loader_cls=TextLoader, show_progress=True)
 docs = loader.load()
 
-md_splitter = MarkdownTextSplitter(chunk_size=1500, chunk_overlap=150)
+md_splitter = MarkdownTextSplitter(chunk_size=1000, chunk_overlap=150)
 splits = md_splitter.split_documents(docs)
 
 print(splits[0])
