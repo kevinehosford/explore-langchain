@@ -2,3 +2,5 @@ venv
 docs
 md_docs
 md_vectors
+node_modules
+bun.lockb
